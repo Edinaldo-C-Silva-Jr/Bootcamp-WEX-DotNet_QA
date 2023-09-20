@@ -45,3 +45,24 @@ Há uma convenção usada entre desenvolvedores para lidar com este caso, que co
 
 O arquivo .gitignore pode ser usado dentro de um repositório para informar ao Git uma lista de arquivos, extensões ou pastas que devem ser ignorados. Quaisquer arquivos ou pastas que coincidirem com algum item desta lista serão automaticamente ignorados pelo Git, não aparecendo no git status, nem sendo adicionados pelo git add.
 Este arquivo é útil para impedir que o Git salve arquivos potencialmente indesejados publicamente, como arquivos que contém informações sensíveis.
+
+# Enviando e Recuperando Alterações em Repositórios Remotos
+
+Uma vez que todas as alterações foram salvas e commitadas em um repositório local, elas podem então serem enviadas ao repositório remoto. 
+
+#### Enviando alterações
+
+> git push -u origin master
+> git push origin master
+
+Envia todas as alterações salvas em commits do repositório local para o repositório remoto definido como origem. 
+Como dito anteriormente, ao conectar os repositórios, "origin" é o nome dado ao repositório remoto para ser referenciado dentro do git. Este nome pode ser definido como qualquer valor, mas por padrão se utiliza "origin".
+Por sua vez, "master" é o nome da branch principal no repositório local. Este também pode ser qualquer valor, mas o Git utiliza "master" como padrão.
+O modificador -u indica ao Git para adicionar uma upstream, o que basicamente significa que a branch atual (neste caso, master) vai começar a rastrear a branch remota para que o Git saiba em qual branch deve fazer o push e o pull.
+O modificador -u só precisa ser utilizado ao realizar o primeiro push. A partir daí, a upstream está configurada, então é possível usar o segundo comando para realizar pushes subsequentes.
+
+#### Baixando alterações
+
+> git pull
+
+Este comando baixa a versão atual do repositório remoto para o repositório local, e então mescla todas as alterações com as existentes nele.
