@@ -1,14 +1,18 @@
 # Criando um Repositório Local
+
 A criação de um repositório pode ser feita de duas formas: criando um novo repositório local ou clonando um repositório remoto existente.
 
 #### Criando um novo repositório 
+
 > git init
 
 Este comando transforma a pasta atual em um repositório local do Git.
 Ao usá-lo, uma pasta chamada .git é criada dentro da pasta atual. Esta pasta é responsável por gerenciar o versionamento de código.
 
 #### Clonando um repositório
+
 > git clone [URL]
+
 > git clone [URL] [nome]
 
 Estes comandos clonam um repositório remoto existente, que se encontra na URL informada em [URL], e o transformam em um repositório local pronto para trabalho.

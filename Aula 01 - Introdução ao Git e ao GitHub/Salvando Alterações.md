@@ -1,8 +1,10 @@
 # Conectando os Repositórios
+
 Para salvar o versionamento de um repositório local do Git para um repositório remoto, como o Github, primeiro é preciso conectar os repositórios.
 Note que, para que os repositórios sejam conectados, ambos já devem existir: o repositório local no computador, e o repositório remoto no Github.
 
 > git remote add origin [URL]
+
 > git remote -v - 
 
 O primeiro comando é o responsável por conectar os repositórios. Ele conecta o repositório local atual ao repositório remoto que se encontra em [URL].
@@ -26,6 +28,7 @@ Mostra o status dos arquivos no repositório local. Este comando exibe quais arq
 #### Preparando as alterações para salvar
 
 > git add [nome do arquivo]
+
 > git add .
 
 Comando responsável por adicionar arquivos à Staging Area do repositório. 
@@ -53,6 +56,7 @@ Uma vez que todas as alterações foram salvas e commitadas em um repositório l
 #### Enviando alterações
 
 > git push -u origin master
+
 > git push origin master
 
 Envia todas as alterações salvas em commits do repositório local para o repositório remoto definido como origem. 
