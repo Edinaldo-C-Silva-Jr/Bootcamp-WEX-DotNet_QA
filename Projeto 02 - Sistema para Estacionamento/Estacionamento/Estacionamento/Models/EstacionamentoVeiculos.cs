@@ -1,14 +1,12 @@
-﻿using System.Numerics;
-
-namespace Estacionamento.Models
+﻿namespace Estacionamento.Models
 {
-    internal class Estacionamento
+    internal class EstacionamentoVeiculos
     {
         private decimal precoInicial;
         private decimal precoHora;
         private List<string> veiculos = new();
 
-        public Estacionamento(decimal precoInicial, decimal precoHora) 
+        public EstacionamentoVeiculos(decimal precoInicial, decimal precoHora) 
         {
             this.precoInicial = precoInicial;
             this.precoHora = precoHora;
@@ -28,9 +26,8 @@ namespace Estacionamento.Models
             else
             {
                 veiculos.Add(placa);
+                Console.WriteLine("Veículo adicionado com sucesso!");
             }
-
-            Console.WriteLine("Veículo adicionado com sucesso!");
         }
 
         public void RemoverVeiculo()
@@ -44,9 +41,10 @@ namespace Estacionamento.Models
             {
                 int quantidadeHoras;
                 Console.WriteLine("Digite a quantidade de horas que o veículo ficou estacionado: ");
-                while (int.TryParse(Console.ReadLine(), out quantidadeHoras) || quantidadeHoras < 0)
+                while (!(int.TryParse(Console.ReadLine(), out quantidadeHoras)) || quantidadeHoras <= 0)
                 {
-                    Console.WriteLine("Valor inválido");
+                    Console.WriteLine("Valor inválido. A hora deve ser um valor numérico positivo.");
+                    Console.WriteLine("Digite novamente a quantidade de horas: ");
                 }
 
                 veiculos.Remove(placa);
