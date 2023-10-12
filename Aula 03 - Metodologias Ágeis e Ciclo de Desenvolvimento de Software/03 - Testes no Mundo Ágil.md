@@ -111,7 +111,7 @@ O BDD é uma técnica de desenvolvimento de software que visa integrar as regras
 
 ### Quadrantes de testes ágeis
 
-![Image](\Aula 03 - Metodologias Ágeis e Ciclo de Desenvolvimento de Software\agile-testing-quadrants.png)
+![Agile Testing Quadrants](agile-testing-quadrants.png)
 
 ### Práticas úteis para testes
 
