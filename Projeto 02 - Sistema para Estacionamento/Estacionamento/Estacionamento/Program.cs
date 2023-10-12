@@ -3,10 +3,20 @@
 decimal precoInicial, precoHora;
 
 Console.WriteLine("Bem-vindo(a) ao Gerenciador de Estacionamento!");
+
 Console.WriteLine("Para iniciar, digite o preço inicial cobrado ao estacionar um veículo: ");
-precoInicial = int.Parse(Console.ReadLine());
+while(!decimal.TryParse(Console.ReadLine(), out precoInicial) || precoInicial <= 0)
+{
+    Console.WriteLine("Valor inválido. O preço inicial deve ser um valor numérico positivo.");
+    Console.WriteLine("Digite novamente o preço inicial: ");
+}
+
 Console.WriteLine("Agora digite o preço cobrado por hora dos veículos estacionados: ");
-precoHora = int.Parse(Console.ReadLine());
+while (!decimal.TryParse(Console.ReadLine(), out precoHora) || precoHora <= 0)
+{
+    Console.WriteLine("Valor inválido. O preço por hora deve ser um valor numérico positivo.");
+    Console.WriteLine("Digite novamente o preço por hora: ");
+}
 
 EstacionamentoVeiculos estacionamento = new(precoInicial, precoHora);
 
@@ -21,7 +31,7 @@ while(opcao != 4)
     Console.WriteLine("4 - Encerrar");
 
     Console.WriteLine("Digite uma opção: ");
-    opcao = int.Parse(Console.ReadLine());
+    int.TryParse(Console.ReadLine(), out opcao);
 
     switch(opcao)
     {
