@@ -82,3 +82,48 @@ Também é necessário monitorar o status de todas as atividades da equipe, o fo
 - Esclarecimento contínuo de requisitos com a equipe
 - Sugerir melhorias
 
+# Métodos de Teste nos Modelos Ágeis
+
+### TDD - Desenvolvimento Orientado por testes
+
+Um método de desenvolvimento de software que se inicia pelos testes
+1 - O desenvolvimento começa pela requisição escrita, os requisitos da funcionalidade
+2 - É escrito um teste inicial, que vai ser executado e obrigatoriamente falhar, já que não existe código
+3 - O código então é escrito para passar no teste, até que todos os testes passem com sucesso
+4 - O código é então refatorado, processo pelo qual ele é limpo e são aplicadas as boas praticas da tecnologia
+5 - É feita então uma nova iteração do TDD, com novos requisitos e novos testes
+
+Esta forma de desenvolver é pensada para evitar vícios no desenvolvimento. Muitas vezes um desenvolvedor acaba focando e desenvolvendo o código com base na situação de sucesso, e acaba não olhando para as situações que podem dar problema. O TDD é feito para capturar essas situações de problema logo de início.
+
+### ATDD - Desenvolvimento orientado a testes de aceite
+
+Esta abordagem de testes é similar ao TDD. A diferença é que no TDD, os testes de unidade são focados e executados unicamente no código, pelos desenvolvedores, para validar o funcionamento técnico do software, enquanto que no ATDD, há a colaboração entre os desenvolvedores, os analistas de qualidade e os analistas de negócio, e tem como objetivo validar o software na visão de aceitação do cliente.
+
+Este desenvolvimento ocorre em 4 fases:
+- Inicialmente, há a fase de planejamento dos requisitos, onde são definidos cenários de utilização do software para entender como o usuário espera que ele se comporte. Assim podem ser criados os testes de aceitação com base nesses requisitos.
+- Depois os testes são refinados e organizados no formato necessário para sua execução.
+- O código é então implementado, com foco em fazer a funcionalidade passar no teste de aceitação. Normalmente, essa fase conta com o uso de TDD junto ao ATDD, para garantir que o código está de acordo com os testes unitários antes de passar para o teste de aceitação.
+- Por fim, a história do usuário é verificada em uma nova reunião, onde o produto pode ser aprovado ou não. O resultado pode levar à criação de uma nova história ou alterações nos testes existentes.
+
+### BDD - Desenvolvimento orientado a comportamento
+
+O BDD é uma técnica de desenvolvimento de software que visa integrar as regras de negócio com a linguagem de programação. Ele possibilita que todos os membros do time utilizem uma mesma linguagem para realizar o trabalho, assim facilitando a comunicação entre as pessoas envolvidas na criação de um software.
+
+### Quadrantes de testes ágeis
+
+![Image](\Aula 03 - Metodologias Ágeis e Ciclo de Desenvolvimento de Software\agile-testing-quadrants.png)
+
+### Práticas úteis para testes
+
+##### Teste assistido
+
+Alguns tipos de testes são melhor realizados junto de uma outra pessoa, como o Product Owner ou o desenvolvedor, ou até mesmo com o cliente. Estes testes podem ser realizados para fazer uma verificação mais assertiva.
+
+##### Teste incremental
+
+É um teste que se inicia de forma simplificada, seja por haver dúvidas no escopo ou nos requisitos, e ao longo da sprint ele acaba sendo refinado, com melhorias sendo adicionadas conforme o teste vai sendo realizado.
+
+##### Mapa mental
+
+O mapa mental é um fluxograma feito a partir de uma ideia principal, neste caso um teste, para poder definir estratégias, cenários ou dados para construir o teste, fazer rascunhos e ter uma comunicação mais rápida.
+Pode ser feito em uma folha de papel ou em ferramentas específicas para isso.
