@@ -1,7 +1,4 @@
-﻿using System.Numerics;
-using System.Text;
-
-namespace Estacionamento.Models
+﻿namespace Estacionamento.Models
 {
     /// <summary>
     /// Classe que implementa os métodos relacionados ao gerenciamento do Estacionamento.
