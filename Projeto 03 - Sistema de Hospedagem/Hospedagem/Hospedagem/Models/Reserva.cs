@@ -15,7 +15,7 @@
         {
             if (Suite != null && Suite.CapacidadeSuite < hospedes.Count)
             {
-                throw new Exception($"A suíte cadastrada não possui capacidade para esta quantidade de hóspedes.");
+                throw new Exception($"A suíte atualmente cadastrada não possui capacidade para esta quantidade de hóspedes.");
             }
 
             Hospedes = hospedes;
@@ -25,7 +25,7 @@
         {
             if (Hospedes != null && Hospedes.Count > suite.CapacidadeSuite)
             {
-                throw new Exception("A suíte escolhida não possui capacidade suficiente para os hóspedes cadastrados.");
+                throw new Exception("A suíte escolhida não possui capacidade suficiente para os hóspedes já cadastrados.");
             }
 
             Suite = suite;
