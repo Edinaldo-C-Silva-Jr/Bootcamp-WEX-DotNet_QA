@@ -10,7 +10,7 @@ O **.NET** é uma plataforma de desenvolvimento unificado que permite construir 
 O .NET não é uma linguagem de programação. Ele abrange várias linguagens e ferramentas, que permitem construir aplicações de tipos variados, incluindo:
 
 | Tipo de Aplicação | Ferramentas |
-|--|--|
+|:--:|:--:|
 | Desktop | WPF / Windows Forms / UWP |
 | Web | ASP.NET |
 | Cloud | Azure |
