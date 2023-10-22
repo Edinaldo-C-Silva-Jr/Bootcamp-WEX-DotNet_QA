@@ -1,7 +1,6 @@
 ﻿using Hospedagem;
 
 Hotel hotel = new();
-
 int opcao = 0;
 
 while (opcao != 5)
