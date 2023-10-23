@@ -1,7 +1,7 @@
 # Construindo um Sistema e Abstraindo um Celular com POO
 
 Solução do *Desafio de Projeto: "Construindo um Sistema e Abstraindo um Celular com POO em C#"* do Bootcamp WEX - Desenvolvimento .NET e QA
-Este desafio porpõe a criação de um sistema que permita cadastrar celulares, utilizando como base uma classe abstrata Smartphone.
+Este desafio propõe a criação de um sistema que permita cadastrar celulares, utilizando como base uma classe abstrata Smartphone.
 
 O sistema deve possibilitar: Cadastro de celulares Nokia ou Iphone.
 Os celulares devem herdar seus métodos de uma classe abstrata Smartphone, e também devem implementar o método abstrato Instalar Aplicativo.
