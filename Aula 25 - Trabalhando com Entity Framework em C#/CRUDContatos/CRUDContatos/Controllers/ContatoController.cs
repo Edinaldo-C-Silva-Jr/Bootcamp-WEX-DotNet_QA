@@ -20,7 +20,7 @@ namespace CRUDContatos.Controllers
         {
             _context.Contatos.Add(contato);
             _context.SaveChanges();
-            return Ok(contato);
+            return CreatedAtAction(nameof(ObterContatoPorId), new { id = contato.Id }, contato);
         }
 
         [HttpGet]
