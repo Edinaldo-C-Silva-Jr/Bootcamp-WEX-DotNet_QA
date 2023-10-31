@@ -51,9 +51,16 @@ namespace SistemaTarefas.Controllers
         }
 
         [HttpGet("PorData/{data}")]
-        public IActionResult ObterTarefaPorData(DateTime data)
+        public IActionResult ObterTarefaPorData(string data)
         {
-            List<Tarefa> tarefas = _context.Tarefas.Where(t => t.Data == data).ToList();
+            DateTime dataValida;
+
+            if (!DateTime.TryParse(data, out dataValida))
+            {
+                return BadRequest();
+            }
+
+            List<Tarefa> tarefas = _context.Tarefas.Where(t => t.Data.Date == dataValida.Date).ToList();
             return Ok(tarefas);
         }
 
