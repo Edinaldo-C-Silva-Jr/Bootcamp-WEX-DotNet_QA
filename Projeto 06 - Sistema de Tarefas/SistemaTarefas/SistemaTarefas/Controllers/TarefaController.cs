@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using SistemaTarefas.Context;
 using SistemaTarefas.Entities;
 
@@ -15,18 +16,32 @@ namespace SistemaTarefas.Controllers
         }
 
         [HttpPost]
-        public IActionResult CriarTarefa(Tarefa tarefa)
+        public IActionResult CriarTarefa(TarefaDTO tarefa)
         {
-            _context.Tarefas.Add(tarefa);
+            if (tarefa == null)
+            {
+                return BadRequest("A tarefa não pode ser nula.");
+            }
+
+            Tarefa tarefaBanco = new()
+            { Titulo = tarefa.Titulo, Descricao = tarefa.Descricao, Data = tarefa.Data, Status = tarefa.Status };
+
+            _context.Tarefas.Add(tarefaBanco);
             _context.SaveChanges();
 
-            return CreatedAtAction(nameof(ObterTarefaPorID), new { id = tarefa.Id }, tarefa);
+            return CreatedAtAction(nameof(ObterTarefaPorID), new { id = tarefaBanco.Id }, tarefaBanco);
         }
 
         [HttpGet("Todas")]
         public IActionResult ObterTodasTarefas()
         {
             List<Tarefa> tarefas = _context.Tarefas.ToList();
+
+            if (tarefas.Count == 0)
+            {
+                return NotFound("Não há tarefas cadastradas.");
+            }
+
             return Ok(tarefas);
         }
 
@@ -37,7 +52,7 @@ namespace SistemaTarefas.Controllers
 
             if (tarefa == null)
             {
-                return NotFound();
+                return NotFound($"Não existe tarefa com o id {id}.");
             }
 
             return Ok(tarefa);
@@ -47,20 +62,30 @@ namespace SistemaTarefas.Controllers
         public IActionResult ObterTarefaPorTitulo(string titulo)
         {
             List<Tarefa> tarefas = _context.Tarefas.Where(t => t.Titulo.Contains(titulo)).ToList();
+
+            if (tarefas.Count == 0)
+            {
+                return NotFound($"Não há tarefas com o título {titulo}.");
+            }
+
             return Ok(tarefas);
         }
 
         [HttpGet("PorData/{data}")]
         public IActionResult ObterTarefaPorData(string data)
         {
-            DateTime dataValida;
-
-            if (!DateTime.TryParse(data, out dataValida))
+            if (!DateTime.TryParse(data, out DateTime dataValida))
             {
-                return BadRequest();
+                return BadRequest("A data não estava em um formato válido.");
             }
 
             List<Tarefa> tarefas = _context.Tarefas.Where(t => t.Data.Date == dataValida.Date).ToList();
+
+            if (tarefas.Count == 0)
+            {
+                return NotFound("Não há tarefas cadastradas neste dia.");
+            }
+
             return Ok(tarefas);
         }
 
@@ -68,17 +93,28 @@ namespace SistemaTarefas.Controllers
         public IActionResult ObterTarefaPorStatus(StatusTarefa status)
         {
             List<Tarefa> tarefas = _context.Tarefas.Where(t => t.Status == status).ToList();
+
+            if (tarefas.Count == 0)
+            {
+                return NotFound("Não há tarefas cadastradas com este status.");
+            }
+
             return Ok(tarefas);
         }
 
         [HttpPut("{id}")]
         public IActionResult AtualizarTarefa(int id, Tarefa tarefa)
         {
+            if (tarefa == null)
+            {
+                return BadRequest("A tarefa não pode ser nula.");
+            }
+
             Tarefa tarefaExistente = _context.Tarefas.Find(id);
 
             if (tarefaExistente == null)
             {
-                return NotFound();
+                return NotFound($"Não existe tarefa com o id {id}.");
             }
 
             tarefaExistente.Titulo = tarefa.Titulo;
@@ -86,7 +122,7 @@ namespace SistemaTarefas.Controllers
             tarefaExistente.Data = tarefa.Data;
             tarefaExistente.Status = tarefa.Status;
 
-            _context.Tarefas.Update(tarefaExistente);
+            _context.Entry(tarefaExistente).State = EntityState.Modified;
             _context.SaveChanges();
 
             return NoContent();
@@ -99,7 +135,7 @@ namespace SistemaTarefas.Controllers
 
             if (tarefaExistente == null)
             {
-                return NotFound();
+                return NotFound($"Não existe tarefa com o id {id}.");
             }
 
             _context.Tarefas.Remove(tarefaExistente);
