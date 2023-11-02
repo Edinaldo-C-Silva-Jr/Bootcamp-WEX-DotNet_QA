@@ -16,10 +16,8 @@ namespace CalculadoraTestes
         {
             // Arrange
             int n1 = 5, n2 = 10;
-
             // Act
             int resultado = _calcular.Somar(n1, n2);
-
             // Assert
             Assert.Equal(15, resultado);
         }
@@ -29,10 +27,8 @@ namespace CalculadoraTestes
         {
             // Arrange
             int n1 = -10, n2 = 20;
-
             // Act
             int resultado = _calcular.Somar(n1, n2);
-
             // Assert
             Assert.Equal(10, resultado);
         }
@@ -42,10 +38,8 @@ namespace CalculadoraTestes
         {
             // Arrange
             int n1 = 40, n2 = 8;
-
             // Act
             int resultado = _calcular.Subtrair(n1, n2);
-
             // Assert
             Assert.Equal(32, resultado);
         }
@@ -55,10 +49,8 @@ namespace CalculadoraTestes
         {
             // Arrange
             int n1 = 20, n2 = -10;
-
             // Act
             int resultado = _calcular.Subtrair(n1, n2);
-
             // Assert
             Assert.Equal(30, resultado);
         }
@@ -68,10 +60,8 @@ namespace CalculadoraTestes
         {
             // Arrange
             int n1 = 5, n2 = 4;
-
             // Act
             int resultado = _calcular.Multiplicar(n1, n2);
-
             // Assert
             Assert.Equal(20, resultado);
         }
@@ -81,10 +71,8 @@ namespace CalculadoraTestes
         {
             // Arrange
             int n1 = -6, n2 = 3;
-
             // Act
             int resultado = _calcular.Multiplicar(n1, n2);
-
             // Assert
             Assert.Equal(-18, resultado);
         }
@@ -94,10 +82,8 @@ namespace CalculadoraTestes
         {
             // Arrange
             int n1 = 50, n2 = 5;
-
             // Act
             int resultado = _calcular.Dividir(n1, n2);
-
             // Assert
             Assert.Equal(10, resultado);
         }
@@ -107,10 +93,8 @@ namespace CalculadoraTestes
         {
             // Arrange
             int n1 = -100, n2 = 20;
-
             // Act
             int resultado = _calcular.Dividir(n1, n2);
-
             // Assert
             Assert.Equal(-5, resultado);
         }
@@ -120,12 +104,24 @@ namespace CalculadoraTestes
         {
             // Arrange
             int n1 = 12345, n2 = 0;
-
             // Act
             int resultado = _calcular.Dividir(n1, n2);
-
             // Assert
             Assert.Equal(0, resultado);
+        }
+
+        [Theory]
+        [InlineData(new int[] { 2, 4, 6, 8, 10 })]
+        public void DeveTestarNumerosParesERetornarVerdadeiro(int[] numeros)
+        {
+            Assert.All(numeros, num => Assert.True(_calcular.Par(num)));
+        }
+
+        [Theory]
+        [InlineData(new int[] { 1, 3, 5, 7, 9 })]
+        public void DeveTestarNumerosImparesERetornarFalse(int[] numeros)
+        {
+            Assert.All(numeros, num => Assert.False(_calcular.Par(num)));
         }
     }
 }
