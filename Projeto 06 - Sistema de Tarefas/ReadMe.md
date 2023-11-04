@@ -1,7 +1,7 @@
 # Construindo um Sistema de Agendamento de Tarefas
 
 Solução do *Desafio de Projeto: "Construindo um Sistema de Agendamento de Tarefas com Entity Framework"* do Bootcamp WEX - Desenvolvimento .NET e QA
-Este desafio porpõe a criação de um sistema que permita fazer um CRUD de tarefas utilizando Entity Framework para salvar os registros no banco de dados.
+Este desafio propõe a criação de um sistema que permita fazer um CRUD de tarefas utilizando Entity Framework para salvar os registros no banco de dados.
 
 O sistema deve possibilitar: Cadastrar, obter, atualizar e deletar tarefas através de uma API.
 A classe de Tarefa deve conter as propriedades Id, Título, Descrição, Data e Status.

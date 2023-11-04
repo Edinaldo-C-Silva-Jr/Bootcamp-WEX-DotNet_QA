@@ -1,7 +1,7 @@
 # Construindo um Sistema para um Estacionamento
 
 Solução do *Desafio de Projeto: "Construindo um Sistema para um Estacionamento Com C#"* do Bootcamp WEX - Desenvolvimento .NET e QA
-Este desafio porpõe a criação de um sistema que permita gerenciar os veículos em um estacionamento.
+Este desafio propõe a criação de um sistema que permita gerenciar os veículos em um estacionamento.
 
 O sistema deve possibilitar: Cadastrar veículos, Listar veículos e Remover veículos, utilizando como identificador o valor da sua placa.
 Ao iniciar a execução do sistema, é perguntado o preço inicial de estacionamento, e também o preço por hora estacionada.

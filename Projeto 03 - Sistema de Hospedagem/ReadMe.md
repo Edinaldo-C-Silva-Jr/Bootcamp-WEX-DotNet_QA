@@ -1,7 +1,7 @@
 # Construindo um Sistema de Hospedagem em um Hotel
 
 Solução do *Desafio de Projeto: "Construindo um Sistema de Hospedagem em um Hotel em C#"* do Bootcamp WEX - Desenvolvimento .NET e QA
-Este desafio porpõe a criação de um sistema que permita criar reservas para um determinado hotel.
+Este desafio propõe a criação de um sistema que permita criar reservas para um determinado hotel.
 
 O sistema deve possibilitar: Cadastrar hóspedes, cadastrar suítes, cadastrar uma reserva, mostrar a quantidade de hóspedes na reserva e mostrar o valor total a ser pago.
 Ao cadastrar hóspedes, são solicitados o nome e o sobrenome.
