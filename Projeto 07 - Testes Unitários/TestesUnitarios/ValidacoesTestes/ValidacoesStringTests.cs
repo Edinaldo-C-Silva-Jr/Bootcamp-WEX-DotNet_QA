@@ -26,7 +26,21 @@ namespace ValidacoesTestes
         }
 
         [Fact]
-        public void DeveContemAPalavraQualquerNoTexto()
+        public void DeveRetornarZeroParaUmaStringVazia()
+        {
+            // Arrange
+            int quantidadeCaracteres;
+            string stringDeTeste = "";
+
+            // Act
+            quantidadeCaracteres = _validaString.RetornarQuantidadeCaracteres(stringDeTeste);
+
+            // Assert
+            Assert.Equal(0, quantidadeCaracteres);
+        }
+
+        [Fact]
+        public void DeveConterAPalavraQualquerNoTexto()
         {
             // Arrange
             bool palavraExiste;
@@ -65,6 +79,20 @@ namespace ValidacoesTestes
 
             // Assert
             Assert.True(terminaComPalavra);
+        }
+
+        [Fact]
+        public void DeveRetornarFalseQuandoAPalavraProcuradaNaoEstaNoFinal()
+        {
+            // Arrange
+            bool terminaComPalavra;
+            string texto = "Começo, meio e fim do texto procurado", palavra = "texto";
+
+            // Act
+            terminaComPalavra = _validaString.TextoTerminaCom(texto, palavra);
+
+            // Assert
+            Assert.False(terminaComPalavra);
         }
     }
 }

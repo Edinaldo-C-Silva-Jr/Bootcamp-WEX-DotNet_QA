@@ -26,6 +26,20 @@ namespace ValidacoesTestes
         }
 
         [Fact]
+        public void RetornaAMesmaListaCasoNaoHajaNumerosNegativos()
+        {
+            // Arrange
+            List<int> lista = new() { 2, 4, 5, 8 };
+            List<int> listaEsperada = new() { 2, 4, 5, 8 };
+
+            // Act
+            lista = _validaLista.RemoverNumerosNegativos(lista);
+
+            // Assert
+            Assert.Equal(listaEsperada, lista);
+        }
+
+        [Fact]
         public void DeveConterONumero9NaLista()
         {
             // Arrange
@@ -82,6 +96,20 @@ namespace ValidacoesTestes
         }
 
         [Fact]
+        public void DeveRetornarMenos9ComoMaiorNumeroDaLista()
+        {
+            // Arrange
+            List<int> lista = new() { -40, -9, -92, -345 };
+            int numero;
+
+            // Act
+            numero = _validaLista.RetornarMaiorNumeroLista(lista);
+
+            // Assert
+            Assert.Equal(-9, numero);
+        }
+
+        [Fact]
         public void DeveRetornarOitoNegativoComoMenorNumeroDaLista()
         {
             // Arrange
@@ -93,6 +121,20 @@ namespace ValidacoesTestes
 
             // Assert
             Assert.Equal(-8, numero);
+        }
+
+        [Fact]
+        public void DeveRetornarDozeComoMenorNumeroDaLista()
+        {
+            // Arrange
+            List<int> lista = new() { 12, 19, 94, 30, 75 };
+            int numero;
+
+            // Act
+            numero = _validaLista.RetornarMenorNumeroLista(lista);
+
+            // Assert
+            Assert.Equal(12, numero);
         }
     }
 }
