@@ -104,7 +104,7 @@ namespace CalculadoraTestes
         }
 
         [Fact]
-        public void VerificaSeListaDeHistoricoNaoEstaVazia()
+        public void VerificaSeHistoricoRetornaListaCom3Elementos()
         {
             // Arrrange
             _calcular.Somar(0, 1);
@@ -114,7 +114,7 @@ namespace CalculadoraTestes
             List<string> historico;
 
             // Act
-            historico = _calcular.Historico();
+            historico = _calcular.RetornarHistorico();
 
             // Assert
             Assert.NotEmpty(historico);
