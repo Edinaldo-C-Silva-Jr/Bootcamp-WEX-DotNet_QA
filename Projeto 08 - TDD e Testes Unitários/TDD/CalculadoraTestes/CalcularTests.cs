@@ -8,7 +8,7 @@ namespace CalculadoraTestes
 
         public CalcularTests()
         {
-            _calcular = new Calcular();
+            _calcular = new Calcular(DateTime.Now.ToShortDateString());
         }
 
         [Theory]

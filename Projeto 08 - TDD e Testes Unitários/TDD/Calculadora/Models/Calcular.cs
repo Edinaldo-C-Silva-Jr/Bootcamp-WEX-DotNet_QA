@@ -2,31 +2,38 @@
 {
     public class Calcular
     {
-        private List<String> historico;
+        private List<string> historico;
+        private string dataOperacao;
 
-        public Calcular()
+        public Calcular(string data)
         {
-            historico = new List<String>();
+            historico = new List<string>();
+            dataOperacao = data;
+        }
+
+        private void InserirNoHistorico(string operacao)
+        {
+            historico.Insert(0, $"Data: {dataOperacao}, {operacao}");
         }
 
         public int Somar(int numero1, int numero2)
         {
-            historico.Insert(0, $"Soma: {numero1} + {numero2} = {numero1 + numero2}");
+            InserirNoHistorico($"Soma: {numero1} + {numero2} = {numero1 + numero2}");
             return numero1 + numero2;
         }
         public int Subtrair(int numero1, int numero2)
         {
-            historico.Insert(0, $"Subtração: {numero1} - {numero2} = {numero1 - numero2}");
+            InserirNoHistorico($"Subtração: {numero1} - {numero2} = {numero1 - numero2}");
             return numero1 - numero2;
         }
         public int Multiplicar(int numero1, int numero2)
         {
-            historico.Insert(0, $"Multiplicação: {numero1} * {numero2} = {numero1 * numero2}");
+            InserirNoHistorico($"Multiplicação: {numero1} * {numero2} = {numero1 * numero2}");
             return numero1 * numero2;
         }
         public int Dividir(int numero1, int numero2)
         {
-            historico.Insert(0, $"Divisão: {numero1} / {numero2} = {numero1 / numero2}");
+            InserirNoHistorico($"Divisão: {numero1} / {numero2} = {numero1 / numero2}");
             return numero1 / numero2;
         }
 
