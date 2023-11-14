@@ -195,7 +195,7 @@ Ele requisita somente o trabalho suficiente para cada incremento.
 Ele pode ser combinado com o Extreme Programming.
 Nas abordagens tradicionais, o ponto principal da entrega são as funcionalidades. No DSDM, o ponto principal é o tempo.
 
-[DSDM vs Tradicional](DSDM-vs-Traditional.png)
+![DSDM vs Tradicional](DSDM-vs-Traditional.png)
 
 #### Princípios
 
