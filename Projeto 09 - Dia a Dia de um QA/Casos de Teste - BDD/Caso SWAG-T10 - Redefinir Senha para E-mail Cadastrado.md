@@ -1,5 +1,5 @@
-Feature: Cliente Utiliza um E-mail Válido e Redefine a Senha
-    @TestCaseKey=SWAG-T10
+Feature: Cliente Utiliza um E-mail Válido e Redefine a Senha  
+    @TestCaseKey=SWAG-T10  
     Scenario: Cliente Utiliza um E-mail Válido e Redefine a Senha
         
         Given que o cliente esteja na tela de Redefinição de Senha

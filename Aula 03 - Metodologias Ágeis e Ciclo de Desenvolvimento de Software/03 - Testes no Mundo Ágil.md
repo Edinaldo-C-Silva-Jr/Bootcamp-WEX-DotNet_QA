@@ -1,6 +1,6 @@
 # Contextualizar a Atividade de Teste
 
-Para cada atividade de desenvolvimento, existe uma atividade de teste. Há diferentes níveis e tipos de testes, presentes em todos os tipos de ciclo de vida. Há diferentes maneiras como os testes se encaixam no ciclo de vida, mas eles devem estar sempre presentes.
+Para cada atividade de desenvolvimento, existe uma atividade de teste. Há diferentes níveis e tipos de testes, presentes em todos os tipos de ciclo de vida. Há diferentes maneiras como os testes se encaixam no ciclo de vida, mas eles devem estar sempre presentes.  
 A atividade de teste deve ser completa, desde o planejamento do projeto até o desenvolvimento do código.
 
 #### História de Usuário - Conceito 3C
@@ -50,13 +50,13 @@ Também há um foco maior no uso de automação para testes de regressão, pois 
 
 ### Níveis de Teste no Modelo Ágil
 
-O nível de teste varia de acordo com o estágio do desenvolvimento.
-Cada teste é definido para validar uma funcionalidade ou parte específica do sistema, e estes testes devem ser feitos sobrepostos, para achar os problemas em partes diferentes do sistema.
+O nível de teste varia de acordo com o estágio do desenvolvimento.  
+Cada teste é definido para validar uma funcionalidade ou parte específica do sistema, e estes testes devem ser feitos sobrepostos, para achar os problemas em partes diferentes do sistema.  
 No modelo ágil, os testes com maior foco são os testes de unidade e os testes de aceite. Os testes de unidade conseguem pegar os problemas mais simples rapidamente, com um custo baixo e maior facilidade para corrigir o problema, e os testes de aceite garantem que o sistema está sendo desenvolvido conforme solicitado.
 
 ### Status de Testes no Modelo Ágil
 
-Assim como ocorre nos projetos no modelo ágil, onde a transparência é passada diariamente para a equipe, o status dos testes também deve ser atualizado com frequência, para que a equipe esteja por dentro dos resultados, dos problemas, do que foi feito, de quais são os impedimentos e do que de fato foi concluído.
+Assim como ocorre nos projetos no modelo ágil, onde a transparência é passada diariamente para a equipe, o status dos testes também deve ser atualizado com frequência, para que a equipe esteja por dentro dos resultados, dos problemas, do que foi feito, de quais são os impedimentos e do que de fato foi concluído.  
 Também é necessário monitorar o status de todas as atividades da equipe, o foco deve ser sempre no feedback da equipe, para garantir que a comunicação seja feita. Às vezes é necessário acompanhar de perto a equipe para conseguir evoluir os testes.
 
 ### Atitudes e Habilidade para Agilidade
@@ -125,5 +125,5 @@ Alguns tipos de testes são melhor realizados junto de uma outra pessoa, como o 
 
 ##### Mapa mental
 
-O mapa mental é um fluxograma feito a partir de uma ideia principal, neste caso um teste, para poder definir estratégias, cenários ou dados para construir o teste, fazer rascunhos e ter uma comunicação mais rápida.
+O mapa mental é um fluxograma feito a partir de uma ideia principal, neste caso um teste, para poder definir estratégias, cenários ou dados para construir o teste, fazer rascunhos e ter uma comunicação mais rápida.  
 Pode ser feito em uma folha de papel ou em ferramentas específicas para isso.

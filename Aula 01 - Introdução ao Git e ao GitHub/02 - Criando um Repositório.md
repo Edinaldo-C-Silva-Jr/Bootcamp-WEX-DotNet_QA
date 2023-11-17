@@ -6,23 +6,22 @@ A criação de um repositório pode ser feita de duas formas: criando um novo re
 
 > git init
 
-Este comando transforma a pasta atual em um repositório local do Git.
+Este comando transforma a pasta atual em um repositório local do Git.  
 Ao usá-lo, uma pasta chamada .git é criada dentro da pasta atual. Esta pasta é responsável por gerenciar o versionamento de código.
 
 #### Clonando um repositório
 
-> git clone [URL]
-
+> git clone [URL]  
 > git clone [URL] [nome]
 
-Estes comandos clonam um repositório remoto existente, que se encontra na URL informada em [URL], e o transformam em um repositório local pronto para trabalho.
+Estes comandos clonam um repositório remoto existente, que se encontra na URL informada em [URL], e o transformam em um repositório local pronto para trabalho.  
 O primeiro comando clona o repositório remoto mantendo seu nome, enquanto o segundo clona e altera, localmente, o nome da pasta raiz para o inserido em [nome].
 
 # Criando um Repositório Remoto no Github
 
 Aqui já fica implícito que o usuário tem uma conta no GitHub.
 
-Na página do perfil de usuário do Github, clicar em ➕🔽, depois em "New Repository" para criar um novo repositório.
+Na página do perfil de usuário do Github, clicar em ➕🔽, depois em "New Repository" para criar um novo repositório.  
 A seguir, há algumas informações que podem ser preenchidas:
 
 - Repository name: Nome do projeto. Precisa ser um nome no formato válido, e não pode ser um nome que já foi utilizado em outro repositório do mesmo usuário.

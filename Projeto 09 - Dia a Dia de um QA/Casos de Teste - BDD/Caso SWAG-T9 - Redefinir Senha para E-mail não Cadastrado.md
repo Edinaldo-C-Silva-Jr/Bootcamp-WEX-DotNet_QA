@@ -1,5 +1,5 @@
-Feature: Cliente Tenta Redefinir Senha para um E-mail não Cadastrado
-    @TestCaseKey=SWAG-T9
+Feature: Cliente Tenta Redefinir Senha para um E-mail não Cadastrado  
+    @TestCaseKey=SWAG-T9  
     Scenario: Cliente Tenta Redefinir Senha para um E-mail não Cadastrado
         
         Given que o cliente esteja na tela de Redefinição de Senha

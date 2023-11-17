@@ -23,7 +23,7 @@ Opcionalmente, é possível conectar o repositório local diretamente com o repo
 
 >  git add remote upstream [URL do Repositório Original]
 
-Este comando conecta o repositório local ao repositório original, onde "upstream" é o nome dado ao repositório original. 
+Este comando conecta o repositório local ao repositório original, onde "upstream" é o nome dado ao repositório original.   
 Caso o repositório original seja alterado, é possível faze o pull direto pelo repositório local, usando o comando:
 
 > git pull upstream main
@@ -36,8 +36,8 @@ Neste caso, o repositório local está conectado a dois repositórios remotos:
 
 Após serem feitas as alterações no repositório local e ser feito o push para o remote (repositório do fork), ao voltar na página do repositório fork no Github, ele já mostra que estamos a frente do repositório original.
 
-A Pull Request pode ser criada usando a opção **Contribute** e **Open Pull Request**. Pode-se também usar a opção que aparece no topo da tela: **Compare & Pull Request**
-Na página de criação da pull request, é possível adicionar o titulo e descrição dela, além de escolher qual repositório e qual branch nós queremos mesclar. Alguns repositórios podem ter templates para pull requests, assim como ocorre para issues.
+A Pull Request pode ser criada usando a opção **Contribute** e **Open Pull Request**. Pode-se também usar a opção que aparece no topo da tela: **Compare & Pull Request**  
+Na página de criação da pull request, é possível adicionar o titulo e descrição dela, além de escolher qual repositório e qual branch nós queremos mesclar. Alguns repositórios podem ter templates para pull requests, assim como ocorre para issues.  
 Mais abaixo, é possível ver as mudanças feitas na pull request, além de quantos commits foram realizados.
 
 Após criar a pull request, ela fica visível no repositório original, na aba Pull Requests. Ela também mostra se existe algum conflito com a branch original.
@@ -46,5 +46,5 @@ Após criar a pull request, ela fica visível no repositório original, na aba P
 
 Como administrador, é possível ver a pull request, suas informações, os commits, as alterações, se existe algum conflito... e então, decidir se as alterações serão mescladas com o repositório original, através do botão **Merge Pull Request**. Isso leva a uma página onde se pode editar o commit que vai mesclar essas alterações. Após o merge, as alterações já aparecem no repositório, e a pull request é fechada automaticamente.
 
-Ao visualizar o código dentro do repositório, existe uma opção "Blame", que permite ver quem foi o responsável pelas alterações naquele arquivo.
+Ao visualizar o código dentro do repositório, existe uma opção "Blame", que permite ver quem foi o responsável pelas alterações naquele arquivo.  
 Após um merge, o autor do pull request também é creditado como um contribuidor do repositório original.

@@ -1,14 +1,14 @@
 # Construindo um Sistema de Hospedagem em um Hotel
 
-Solução do *Desafio de Projeto: "Construindo um Sistema de Hospedagem em um Hotel em C#"* do Bootcamp WEX - Desenvolvimento .NET e QA
+Solução do *Desafio de Projeto: "Construindo um Sistema de Hospedagem em um Hotel em C#"* do Bootcamp WEX - Desenvolvimento .NET e QA  
 Este desafio propõe a criação de um sistema que permita criar reservas para um determinado hotel.
 
-O sistema deve possibilitar: Cadastrar hóspedes, cadastrar suítes, cadastrar uma reserva, mostrar a quantidade de hóspedes na reserva e mostrar o valor total a ser pago.
-Ao cadastrar hóspedes, são solicitados o nome e o sobrenome.
-Ao cadastrar a suíte, são necessários o tipo da suíte, a capacidade e o valor da diária.
-A reserva recebe uma lista de hóspedes e uma suíte. O sistema deve devolver uma exceção caso a quantidade de hóspedes seja maior que a capacidade da suíte.
-A quantidade de hóspedes é retornada com base na quantidade de hóspedes da lista.
-O valor a ser pago é calculado com base na diária da suíte e na quantidade de dias reservados. Há também um desconto de 10% no valor caso a reserva seja de 10 dias ou mais.
+O sistema deve possibilitar: Cadastrar hóspedes, cadastrar suítes, cadastrar uma reserva, mostrar a quantidade de hóspedes na reserva e mostrar o valor total a ser pago.  
+- Ao cadastrar hóspedes, são solicitados o nome e o sobrenome.
+- Ao cadastrar a suíte, são necessários o tipo da suíte, a capacidade e o valor da diária.
+- A reserva recebe uma lista de hóspedes e uma suíte. O sistema deve devolver uma exceção caso a quantidade de hóspedes seja maior que a capacidade da suíte.
+- A quantidade de hóspedes é retornada com base na quantidade de hóspedes da lista.
+- O valor a ser pago é calculado com base na diária da suíte e na quantidade de dias reservados. Há também um desconto de 10% no valor caso a reserva seja de 10 dias ou mais.
 
 O código deste desafio foi desenvolvido inteiramente por mim, sem utilizar o fork do repositório original.
 

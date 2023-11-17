@@ -30,10 +30,10 @@ Altera a mensagem inserida no último commit para a nova mensagem inserida em [m
 
 > git reset [tipo] [hashdo commit]
 
-Retorna o repositório a um commit anterior, com o hash fornecido. O reporitório retorna ao commit do hash especificado, e todos os commits posteriores são desfeitos. O comportamento do Git em relação aos arquivos depende do tipo de reset definido em [tipo]. Caso o comando seja usado sem um tipo, ele utiliza "mixed" como padrão.
+Retorna o repositório a um commit anterior, com o hash fornecido. O reporitório retorna ao commit do hash especificado, e todos os commits posteriores são desfeitos. O comportamento do Git em relação aos arquivos depende do tipo de reset definido em [tipo]. Caso o comando seja usado sem um tipo, ele utiliza "mixed" como padrão.  
 Os tipos de reset são:
 - "--soft" - Desfaz todos os commits posteriores ao commit fornecido, retornando os arquivos e as alterações pertencentes a esses commits para a área de trabalho do repositório, já inseridos na Staging Area e prontos para serem commitados novamente.
 - "--mixed" - Desfaz todos os commits posteriores ao commit fornecido, retornando os arquivos e as alterações pertencentes a esses commits para a área de trabalho do repositório, mas como arquivos Untracked, portanto eles não estão prontos para serem commitados novamente.
 - "--hard" - Desfaz todos os commits posteriores ao commit fornecido e automaticamente deleta todos os arquivos pertencentes a eles. 
 
-**Atenção:** Alterações em commits anteriores devem ser feitas apenas *antes de enviar as alterações ao repositório remoto*. A partir do momento que outras pessoas têm acesso às alterações, desfazê-las pode gerar diversos conflitos. O ideal, caso haja necessidade de desfazer alterações existentes em um repositório remoto, é fazer isso em um novo commit e enviar ao repositório.
+**Atenção:** Alterações em commits anteriores devem ser feitas apenas **antes de enviar as alterações ao repositório remoto**. A partir do momento que outras pessoas têm acesso às alterações, desfazê-las pode gerar diversos conflitos. O ideal, caso haja necessidade de desfazer alterações existentes em um repositório remoto, é fazer isso em um novo commit e enviar ao repositório.

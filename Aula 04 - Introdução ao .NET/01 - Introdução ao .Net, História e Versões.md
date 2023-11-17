@@ -3,10 +3,8 @@
 
 ### Diferença entre .NET e C#
 
-O .NET e o C# estão intimamente ligados, mas existem diferenças entre estes termos, pois eles tratam de coisas distintas que são utilizadas juntas.
-
-O **.NET** é uma plataforma de desenvolvimento unificado que permite construir diferentes tipos de aplicações. O **C#** é uma linguagem de programação utilizada no .NET.
-
+O .NET e o C# estão intimamente ligados, mas existem diferenças entre estes termos, pois eles tratam de coisas distintas que são utilizadas juntas.  
+O **.NET** é uma plataforma de desenvolvimento unificado que permite construir diferentes tipos de aplicações. O **C#** é uma linguagem de programação utilizada no .NET.  
 O .NET não é uma linguagem de programação. Ele abrange várias linguagens e ferramentas, que permitem construir aplicações de tipos variados, incluindo:
 
 | Tipo de Aplicação | Ferramentas |
@@ -38,7 +36,7 @@ O C# é uma parte do ecossistema do .NET. Ele é uma das linguagens de programa�
 
 # História do .NET
 
-O .NET foi criado com o objetivo principal de competir com o Java. Na época de sua criação, em 2002, o conceito de multiplataforma era muito importante no mundo da tecnologia, e o Java foi pioneiro neste conceito com o uso da JVM, o que revolucionou a área e fez o Java ganhar muita popularidade.
+O .NET foi criado com o objetivo principal de competir com o Java. Na época de sua criação, em 2002, o conceito de multiplataforma era muito importante no mundo da tecnologia, e o Java foi pioneiro neste conceito com o uso da JVM, o que revolucionou a área e fez o Java ganhar muita popularidade.  
 Com isso, a Microsoft queria implementar esse conceito no Windows. Assim surgiu o .NET Framework, criado com a ideia de ser uma alternativa multiplataforma do Windows. Porém, diferente do Java que rodava em qualquer plataforma, o .NET era amarrado ao Windows, e servia principalmente para facilitar o desenvolvimento de aplicativos no Windows.
 
 ### Linha do Tempo do .NET
@@ -66,14 +64,13 @@ Com isso, a Microsoft queria implementar esse conceito no Windows. Assim surgiu 
 
 ### Diferença entre .NET Framework e .NET (Ou .NET Core)
 
-O .NET Framework é a versão legado que só funciona em Windows.
+O .NET Framework é a versão legado que só funciona em Windows.  
 O .NET é a versão atual que é multiplataforma. (Anteriormente chamada de .NET Core)
 
-O .NET atual foi feito reescrito do zero, pensado para funcionar em qualquer plataforma, sem precisar necessariamente do Windows. O .NET Framework é integrado com o Windows, portanto ele não funciona em outras plataformas.
-
+O .NET atual foi feito reescrito do zero, pensado para funcionar em qualquer plataforma, sem precisar necessariamente do Windows. O .NET Framework é integrado com o Windows, portanto ele não funciona em outras plataformas.  
 As maiores vantagens de utilizar o .NET Core, por ser multiplataforma, são a facilidade de desenvolver aplicativos para vários sistemas e o barateamento do custo dos servidores, pois os aplicativos podem ser instalados em um servidor Linux, assim não sendo necessário comprar uma licença do Windows.
 
 ### Mudanças no .NET Core
 
-A versão .NET 5 é uma versão que trouxe diversas mudanças na plataforma .NET. Ela é uma nova versão do .NET Core, que foi lançada depois do .NET Core 3.1, e também levou ao .NET Framework ser descontinuado.
+A versão .NET 5 é uma versão que trouxe diversas mudanças na plataforma .NET. Ela é uma nova versão do .NET Core, que foi lançada depois do .NET Core 3.1, e também levou ao .NET Framework ser descontinuado.  
 A partir desta versão, o .NET Core, agora chamado apenas de .NET, passa a ser a versão oficial da plataforma .NET, e ele foi lançado diretamente na versão 5 para não confundir com o .NET Framework, que tem como sua versão final o .NET Framework 4.8.

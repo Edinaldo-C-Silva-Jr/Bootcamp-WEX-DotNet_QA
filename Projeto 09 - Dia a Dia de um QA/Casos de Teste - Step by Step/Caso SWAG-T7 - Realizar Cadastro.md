@@ -1,7 +1,7 @@
-Nome: Usuário Insere Todos os Dados Necessários e Realiza o Cadastro
+Nome: Usuário Insere Todos os Dados Necessários e Realiza o Cadastro  
 @TestCaseKey=SWAG-T7
 
-Passo: Usuário insere dados em todos os campos obrigatórios, utilizando um e-mail que não se encontra atualmente cadastrado, e clica em Criar Conta
+Passo: Usuário insere dados em todos os campos obrigatórios, utilizando um e-mail que não se encontra atualmente cadastrado, e clica em Criar Conta  
 Dados de Teste: 
 - Nome: João Silva
 - Email: joaosilva@exemplo.com

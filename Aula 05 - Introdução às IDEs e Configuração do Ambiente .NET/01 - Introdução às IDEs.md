@@ -1,6 +1,6 @@
 # O que é uma IDE
 
-Uma IDE (Integrated Development Environment) é um software utilizado para desenvolver aplicativos, que permite muitas facilidades no processo de desenvolvimento, como permitir que o programador foque em uma única janela para o desenvolvimento.
+Uma IDE (Integrated Development Environment) é um software utilizado para desenvolver aplicativos, que permite muitas facilidades no processo de desenvolvimento, como permitir que o programador foque em uma única janela para o desenvolvimento.  
 As IDEs possuem várias ferramentas que ajudam e facilitam no desenvolvimento de aplicativos. Por exemplo:
 - IntelliSense, que sugere termos para completar comandos e nomes automaticamente.
 - Mudança de cor de palavras dependendo do significado (classes, métodos, variáveis, dentre outros)
@@ -23,8 +23,7 @@ Principal IDE do .NET, com suporte para C#, C++, Python, Node.js, Unity e mobile
 
 ### Visual Studio Code
 
-Ele é uma ferramenta diferente do Visual Studio, embora o nome seja similar. O VS Code é um editor de texto que não depende de linguagem, mas não possui ferramentas específicas para desenvolvimento.
-Ele não é uma IDE de fato, mas possui extensões para instalar algumas ferramentas comuns de IDE.
+Ele é uma ferramenta diferente do Visual Studio, embora o nome seja similar. O VS Code é um editor de texto que não depende de linguagem, mas não possui ferramentas específicas para desenvolvimento. Ele não é uma IDE de fato, mas possui extensões para instalar algumas ferramentas comuns de IDE.
 
 ##### Vantagens
 
