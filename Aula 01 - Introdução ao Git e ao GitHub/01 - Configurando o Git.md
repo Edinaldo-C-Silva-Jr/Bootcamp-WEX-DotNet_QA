@@ -11,27 +11,32 @@ O comando git config pode ser utilizado com três locais diferentes, que decidem
 - "-- global" - A configuração se aplica a todos os repositórios do usuário atual
 - "-- local" - A configuração se aplica ao repositório atual
 
-> git config --list  
-> git config --global --list
+```
+git config --list  
+git config --global --list
+```
 
 Mostra todas as configurações atuais. O primeiro comando mostra para todos os locais, o segundo apenas as configurações globais.
 
 #### Username e email
-
-> git config --global user.name [nome]  
-> git config --global user.email [email]
+```
+git config --global user.name [nome]  
+git config --global user.email [email]
+```
 
 Estes comandos configuram o nome de usuário e o email que aparecerão nos commits feitos pelo usuário, utilizando os valores inseridos em [nome] e [email]
-
-> git config user.name  
-> git config user.email
+```
+git config user.name  
+git config user.email
+```
 
 Estes comandos retornam o valor configurado do nome e do email
 
 #### Default Branch name
-
-> git config init.defaultBranch  
-> git config --global init.defaultBranch [nome da branch]
+```
+git config init.defaultBranch  
+git config --global init.defaultBranch [nome da branch]
+```
 
 O primeiro comando retorna o nome da branch padrão criada pelo Git ao iniciar um novo repositório. O segundo muda o nome da branch padrão para o nome inserido em [nome da branch].  
 Ele foi utilizado com o local "--global", portanto se aplica a todos os repositório do usuário atual.  

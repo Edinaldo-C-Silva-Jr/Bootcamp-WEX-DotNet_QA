@@ -38,7 +38,7 @@ Ao criar uma abstração de um objeto, é importante representar apenas o que se
 Uma **classe** no C# é representada pela palavra "class", seguida do nome da classe. Por convenção, o nome da classe começa sempre com letra maiúscula.
 
 ```
-	public class Pessoa
+public class Pessoa
 ```
 
 O C# define o escopo do código através de chaves { }  
@@ -47,17 +47,17 @@ O código de uma classe, método ou estrutura sempre começa ao abrir chaves e t
 Os **atributos** são variáveis definidas no escopo da classe, que ficam disponíveis por toda a estrutura da classe. Esses atributos são definidos como uma variável, e devem ter o seu tipo definido na sua declaração. Por convenção, o nome de atributos de uma classe começa com letra maiúscula.
 
 ```
-	public string Nome
-	public int Idade
+public string Nome
+public int Idade
 ```
 
 Os **métodos**, ou funções, são uma estrutura de código que realiza uma ação dentro da classe. Os métodos sempre possuem parêntesis () na frente de seu nome, tanto ao serem definidos como ao serem usados. Esses parêntesis representam que esse método é uma ação, e também servem para passar parâmetros (valores) para ele.
 
 ```
-	public void Apresentar()
-	{
-		Console.WriteLine($"Olá, meu nome é {Nome}, e tenho {Idade} anos.");
-	}
+public void Apresentar()
+{
+	Console.WriteLine($"Olá, meu nome é {Nome}, e tenho {Idade} anos.");
+}
 ```
 
 ### Namespaces
@@ -67,12 +67,12 @@ Toda classe é identificada pelo nome da namespace à qual ela pertence junto do
 Esta referência pode ser feita de duas maneiras:
 - No nome da própria classe. Esse tipo de referência é feito utilizando um ponto entre o nome da namespace e o nome da classe. A referência deve ser utilizada toda vez que a classe for usada no código:  
 ```
-	NamespacePessoa.ClassePessoa objetoPessoa = new NamespacePessoa.ClassePessoa();
+NamespacePessoa.ClassePessoa objetoPessoa = new NamespacePessoa.ClassePessoa();
 ```
 - No topo do código com a palavra "using".
 ```
-	using NamespacePessoa;
-	ClassePessoa objetoPessoa = new ClassePessoa();
+using NamespacePessoa;
+ClassePessoa objetoPessoa = new ClassePessoa();
 ```
 
 ### Objeto - Instância de uma Classe
@@ -86,10 +86,10 @@ Para instanciar uma classe, é necessário criar uma variável com o tipo da pr�
 
 A partir do momento que o objeto é instanciado e existe na memória, ele pode ter suas informações manipuladas. Como por exemplo, é possível atribuir ou resgatar os valores dos seus atributos, ou utilizar os seus métodos.
 ```
-	pessoa1.Nome = "João";
-	pessoa1.Idade = 30;
+pessoa1.Nome = "João";
+pessoa1.Idade = 30;
 	
-	pessoa1.Apresentar();
+pessoa1.Apresentar();
 ```
 
 # Convenções

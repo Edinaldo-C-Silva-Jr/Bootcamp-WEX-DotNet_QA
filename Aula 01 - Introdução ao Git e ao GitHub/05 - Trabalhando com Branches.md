@@ -9,34 +9,39 @@ Quando uma branch é criada a partir de outra existente, ela começa apontando p
 Usando o comando git log, é possível ver para quais commits cada branch está apontando no momento.
 
 #### Criando uma Branch
-
-> git checkout -b [nome da branch]
+```
+git checkout -b [nome da branch]
+```
 
 Cria uma nova branch, com o nome definido em [nome da branch], e troca a área de trabalho para usar a nova branch criada.
 
 #### Trocando de Branch
-
-> git checkout [nome da branch]
+```
+git checkout [nome da branch]
+```
 
 Troca a área de trabalho atual para a branch com o nome [nome da branch], aplicando todas as alterações contidas nela nos arquivos.
 
 #### Informações Sobre Branches
-
-> git branch  
-> git branch -v
+```
+git branch  
+git branch -v
+```
 
 O primeiro comando lista todas as branches existentes no repositório atual.  
 O segundo comando, com o modificador -v, também lista todas as branches do repositório, mas também exibe qual foi o último commit realizado em cada uma delas, mostrando o hash curto e a mensagem do commit.
 
 #### Mesclar Duas Branches
-
-> git merge [nome da branch]
+```
+git merge [nome da branch]
+```
 
 Mescla todo o conteúdo da branch de nome [nome da branch] com a branch atual. Com isso, todos os commits feitos na branch [nome da branch], com seus arquivos e alterações, são aplicados e salvos na branch atual.
 
 #### Deletar uma Branch
-
-> git branch -d [nome da branch]
+```
+git branch -d [nome da branch]
+```
 
 Este comando deleta a branch com o nome [nome da branch], exclundo todas as alterações contidas que não fazem parte de outras branches.
 
@@ -59,22 +64,25 @@ Ao usar o comando git status, é possível ver algumas informações sobre o con
 
 O comando git pull é a junção de dois comandos: git fetch, que baixa as alterações, e git merge, que mescla com a branch atual.  
 Porém, é possível também realizar esses comandos separadamente.
-
-> git fetch origin master
+```
+git fetch origin master
+```
 
 Este comando baixa as alterações presentes no repositório remoto (origin/master), mas não mescla com a branch atual, apenas as deixa disponíveis no repositório remoto como uma branch separada, assim é possível ver as alterações existentes nele antes de mesclar.
 
 #### Verificar as Diferenças Entre Duas Branches
-
-> git diff [nome da branch] [nome da outra branch]  
-> git diff master origin/master
+```
+git diff [nome da branch] [nome da outra branch]  
+git diff master origin/master
+```
 
 Este comando mostra as diferenças entre o conteúdo de duas branches, identificadas pelos valores [nome da branch] e [nome da outra branch].  
 O segundo comando é um exemplo, que compara o conteúdo da branch principal local com a branch principal remota.
 
 #### Clonar Apenas uma Branch
-
-> git clone [URL] --branch [nome da branch] --single-branch
+```
+git clone [URL] --branch [nome da branch] --single-branch
+```
 
 Clona o conteúdo do repositório remoto contido na url [URL], mas apenas o conteúdo existente na branch [nome da branch].  
 Se o nome da branch não for indicado, o conteúdo será clonado apenas da branch principal

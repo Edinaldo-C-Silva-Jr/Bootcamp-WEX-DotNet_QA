@@ -2,9 +2,10 @@
 
 Para salvar o versionamento de um repositório local do Git para um repositório remoto, como o Github, primeiro é preciso conectar os repositórios.  
 Note que, para que os repositórios sejam conectados, ambos já devem existir: o repositório local no computador, e o repositório remoto no Github.
-
-> git remote add origin [URL]  
-> git remote -v - 
+```
+git remote add origin [URL]  
+git remote -v - 
+```
 
 O primeiro comando é o responsável por conectar os repositórios. Ele conecta o repositório local atual ao repositório remoto que se encontra em [URL].  
 A URL do repositório remoto pode ser encontrada ao acessar a página do repositório no Github, depois em **[ <> Code ]**, então a URL ficará visível em uma caixa abaixo da aba HTTPS.  
@@ -17,24 +18,27 @@ O segundo comando mostra a URL do repositório remoto conectado ao repositório 
 Após um repositório ser clonado ou criado em uma pasta no computador, qualquer alteração dentro desta pasta será detectada pelo Git, e a partir daí, é possível adicioná-las ao versionamento através de alguns comandos.
 
 #### Verificando o status das alterações
-
-> git status
+```
+git status
+```
 
 Mostra o status dos arquivos no repositório local. Este comando exibe quais arquivos estão na Staging Area ou não.
 - Staging Area: A área de preparação do versionamento, onde os arquivos são adicionados para que possam então serem salvos em uma versão. Arquivos que não estão na Staging Area são chamados Untracked Files.
 - Untracked files: Arquivos não rastreados pelo git, que estão na pasta local mas ainda não foram salvos em uma versão no repositório. Há várias maneiras que um arquivo pode ser considerado untracked: Um novo arquivo que foi criado, um arquivo existente que foi renomeado, um arquivo que foi alterado, um arquivo que foi deletado... Qualquer alteração realizada dentro da pasta onde o repositório se encontra é considerada Untracked até que seja adicionada na Staging Area.
 
 #### Preparando as alterações para salvar
-
-> git add [nome do arquivo]  
-> git add .
+```
+git add [nome do arquivo]  
+git add .
+```
 
 Comando responsável por adicionar arquivos à Staging Area do repositório.  
 O primeiro comando adiciona o arquivo com o nome indicado em [nome do arquivo] para a Staging Area, enquanto o segundo adiciona todas as alterações existentes.
 
 #### Salvando as alterações no repositório local
-
-> git commit -m "[mensagem]" 
+```
+git commit -m "[mensagem]" 
+```
 
 Rastreia os arquivos que se encontram atualmente na Staging Area, incluindo-os no repositório local como parte de uma nova versão.  
 O modificador "-m" permite adicionar uma mensagem de descrição do commit, que é inserida em [mensagem] (entre aspas). Esta mensagem é exibida na página do Github ao acessar o commit, e também no próprio Git.
@@ -52,9 +56,10 @@ Este arquivo é útil para impedir que o Git salve arquivos potencialmente indes
 Uma vez que todas as alterações foram salvas e commitadas em um repositório local, elas podem então serem enviadas ao repositório remoto. 
 
 #### Enviando alterações
-
-> git push -u origin master  
-> git push origin master
+```
+git push -u origin master  
+git push origin master
+```
 
 Envia todas as alterações salvas em commits do repositório local para o repositório remoto definido como origem.  
 Como dito anteriormente, ao conectar os repositórios, "origin" é o nome dado ao repositório remoto para ser referenciado dentro do git. Este nome pode ser definido como qualquer valor, mas por padrão se utiliza "origin".
@@ -63,7 +68,8 @@ O modificador -u indica ao Git para adicionar uma upstream, o que basicamente si
 O modificador -u só precisa ser utilizado ao realizar o primeiro push. A partir daí, a upstream está configurada, então é possível usar o segundo comando para realizar pushes subsequentes.
 
 #### Baixando alterações
-
-> git pull
+```
+git pull
+```
 
 Este comando baixa a versão atual do repositório remoto para o repositório local, e então mescla todas as alterações com as existentes nele.
