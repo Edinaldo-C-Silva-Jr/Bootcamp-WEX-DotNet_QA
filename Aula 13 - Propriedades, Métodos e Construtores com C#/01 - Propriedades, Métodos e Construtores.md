@@ -71,7 +71,7 @@ Propriedades somente leitura podem ter um valor atribuído a elas no momento de 
 # Métodos
 
 Métodos são ações existentes dentro de uma classe, que podem ser executados e reaproveitados a qualquer momento.  
-Eles são representados por uma assinatura de método, uma identificação que torna o método único. A assinatura é a estrutura principal do método que contém o tipo de retorno do método, depois o seu nome, e depois parêntesis (), que podem, opcionalmente, conter parâmetros de entrada.  
+Eles são representados por uma assinatura de método, uma identificação que torna o método único. A assinatura é a estrutura principal do método que contém o tipo de retorno do método, depois o seu nome, e depois parêntesis `( )`, que podem, opcionalmente, conter parâmetros de entrada.  
 Após a assinatura há um bloco de código, onde está contido todo o código que será executado ao chamar este método.
 ```
 private List<string> Pessoas { get; set; }
@@ -88,7 +88,7 @@ public int ExibirQuantidadePessoas()
 ```
 
 O primeiro método AdicionarPessoa tem tipo de retorno void, ou seja, não retorna nada. Ele recebe um parâmetro, uma string pessoa, e o utiliza durante a execução do bloco de código.
-O segundo método ExibirQuantidadePessoas retorna int, portanto ele precisa retornar um valor, passado através da instrução "return". Ele não recebe nenhum parâmetro, mas ainda precisa utilizar os parêntesis para identificar que ele é um método.
+O segundo método ExibirQuantidadePessoas retorna int, portanto ele precisa retornar um valor, passado através da instrução `return`. Ele não recebe nenhum parâmetro, mas ainda precisa utilizar os parêntesis para identificar que ele é um método.
 
 No Intellisense, os métodos são representados por um ícone de cubo `🧊`.
 

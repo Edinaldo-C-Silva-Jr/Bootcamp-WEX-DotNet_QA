@@ -46,9 +46,9 @@ Por exemplo, uma classe Conta Bancária possui o valor do saldo, e esse valor pr
 Então a Conta Bancária oculta o valor do saldo, e disponibiliza os métodos Depositar e Sacar, que fornecem um escopo limitado para alterar o valor do saldo.
 
 Existem diversos tipos de modificadores de acesso que podem ser usados para encapsular uma classe, os mais comuns são:
-- **Public**: Qualquer classe pode acessar esse membro da classe.
-- **Private**: Apenas a própria classe pode acessar esse membro.
-- **Protected**: Apenas a própria classe e suas classes filhas podem acessar o membro.
+- `Public`: Qualquer classe pode acessar esse membro da classe.
+- `Private`: Apenas a própria classe pode acessar esse membro.
+- `Protected`: Apenas a própria classe e suas classes filhas podem acessar o membro.
 
 ### Herança
 
@@ -101,5 +101,5 @@ Por exemplo, a classe Pessoa pode ter um método Apresentar, que exibe "Olá, so
 - Professor: "Olá, meu nome é {nome}. Sou um professor, e meu salário é {salario}"
 
 Para utilizar o polimorfismo com override, é necessário dois passos:
-- Na classe pai, declarar o método como "virtual", que indica que esse método pode ser sobrescrito por classes que o herdam.
-- Na classe filha, declarar um método com o mesmo nome, utilizando a palavra "override", que indica que essa implementação substitui a do método virtual da classe pai.
+- Na classe pai, declarar o método como `virtual`, que indica que esse método pode ser sobrescrito por classes que o herdam.
+- Na classe filha, declarar um método com o mesmo nome, utilizando a palavra `override`, que indica que essa implementação substitui a do método virtual da classe pai.

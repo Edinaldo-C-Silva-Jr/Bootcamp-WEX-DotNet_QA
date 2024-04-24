@@ -7,9 +7,9 @@ Todos os comandos devem ser utilizados no Git Bash.
 
 Mostra informações e permite alterar configurações no Git.  
 O comando git config pode ser utilizado com três locais diferentes, que decidem onde as configurações serão aplicadas: 
-- "-- system" - A configuração se aplica a todos os usuários do sistema
-- "-- global" - A configuração se aplica a todos os repositórios do usuário atual
-- "-- local" - A configuração se aplica ao repositório atual
+- `-- system` - A configuração se aplica a todos os usuários do sistema
+- `-- global` - A configuração se aplica a todos os repositórios do usuário atual
+- `-- local` - A configuração se aplica ao repositório atual
 
 ```
 git config --list  
@@ -39,5 +39,5 @@ git config --global init.defaultBranch [nome da branch]
 ```
 
 O primeiro comando retorna o nome da branch padrão criada pelo Git ao iniciar um novo repositório. O segundo muda o nome da branch padrão para o nome inserido em [nome da branch].  
-Ele foi utilizado com o local "--global", portanto se aplica a todos os repositório do usuário atual.  
+Ele foi utilizado com o local `--global`, portanto se aplica a todos os repositório do usuário atual.  
 Nota: Por padrão, o Git define o nome da branch principal como "master", porém também é comum usar o nome "main".

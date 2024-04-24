@@ -77,7 +77,7 @@ Para formatar um dado DateTime em diferentes formatos, pode-se utilizar os diver
 Console.WriteLine(DateTime.Now.ToString("dd/MM/yyyy HH:mm"));
 ```
 
-Esse código imprime a data na tela no formato: 31/12/2023 23:59  
+Esse código imprime a data na tela no formato: `31/12/2023 23:59`  
 Há várias possibilidades para formatar esse valor, baseado nas letras utilizadas para representar a formatação.
 
 O tipo DateTime também conta com os métodos Parse e TryParse, que convertem um valor de texto em formato de data para um valor de data.  

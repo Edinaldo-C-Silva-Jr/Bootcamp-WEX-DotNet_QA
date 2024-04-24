@@ -21,12 +21,12 @@ Para trabalhar no repositório de fork, é necessário fazer um clone dele para 
 
 Opcionalmente, é possível conectar o repositório local diretamente com o repositório original. Essa conexão seria feita apenas para baixar as alterações diretamente dele, sem precisar atualizar o repositório fork e depois fazer um pull das alterações dele.
 
->  git add remote upstream [URL do Repositório Original]
+`git add remote upstream [URL do Repositório Original]`
 
 Este comando conecta o repositório local ao repositório original, onde "upstream" é o nome dado ao repositório original.   
 Caso o repositório original seja alterado, é possível faze o pull direto pelo repositório local, usando o comando:
 
-> git pull upstream main
+`git pull upstream main`
 
 Neste caso, o repositório local está conectado a dois repositórios remotos:
 - Remote: O repositório de fork. A conexão com esse repositório foi estabelecida no momento em que foi feito o clone. Este é o repositório para onde devem ser enviadas as alterações através do push.

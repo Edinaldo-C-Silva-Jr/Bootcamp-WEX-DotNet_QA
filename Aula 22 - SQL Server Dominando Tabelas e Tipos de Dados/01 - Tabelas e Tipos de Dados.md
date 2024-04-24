@@ -176,11 +176,11 @@ Os tipos de dados mais utilizados no SQL são:
 - **Varchar(n):** Texto com quantidade variável de caracteres. Pode ter até 8000 caracteres.
 - **Bit:** Valor inteiro que pode ser 0 ou 1 (valor booleano).
 - **Tinyint:** Valor numérico inteiro que pode armazenar de 0 a 255.
-- **Smallint:** Valor numérico inteiro que pode armazenar de -2^15^ a 2^15^.
-- **int:** Valor numérico inteiro que pode armazenar de -2^31^ a 2^31^.
-- **Bigint:** Valor numérico inteiro que pode armazenar de -2^63^ a 2^63^.
-- **Decimal(p,s) / Numeric(p,s):** Valor numérico decimal que pode armazenar de -10^38^ a 10^38^. O parâmetro `p` define a quantidade de dígitos, de 0 a 38, e o parâmetro `s` define a quantidade de dígitos depois da vírgula, de 0 a `p`.
-- **Float(n):** Valor numérico decimal que pode armazenar de -1.79 * 10^308^ a 1.79 * 10^308^.
+- **Smallint:** Valor numérico inteiro que pode armazenar de -2^15 a 2^15.
+- **int:** Valor numérico inteiro que pode armazenar de -2^31 a 2^31.
+- **Bigint:** Valor numérico inteiro que pode armazenar de -2^63 a 2^63.
+- **Decimal(p,s) / Numeric(p,s):** Valor numérico decimal que pode armazenar de -10^38 a 10^38. O parâmetro `p` define a quantidade de dígitos, de 0 a 38, e o parâmetro `s` define a quantidade de dígitos depois da vírgula, de 0 a `p`.
+- **Float(n):** Valor numérico decimal que pode armazenar de -1.79 * 10^308 a 1.79 * 10^308.
 - **Datetime:** Valor de data que pode armazenar desde `01/01/1753` a `31/12/9999`, com precisão de 3.33 milissegundos.
 - **Datetime2:** Valor de data que pode armazenar desde `01/01/0001` a `31/12/9999`, com precisão de 100 nanossegundos.
 - **Date:** Valor de data equivalente ao Datetime2, sem armazenar horário.

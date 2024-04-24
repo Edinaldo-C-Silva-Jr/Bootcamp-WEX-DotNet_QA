@@ -14,7 +14,7 @@ Os operadores aritméticos principais são:
 
 ### Classe Math
 
-A classe Math é uma classe já implementada do C# que pode ser utilizada para realizar diversas operações matemáticas, sem precisar implementá-las manualmente.  
+A classe **Math** é uma classe já implementada do C# que pode ser utilizada para realizar diversas operações matemáticas, sem precisar implementá-las manualmente.  
 Para utilizar a classe Math, basta chamar o seu nome, diretamente, e depois especificar o método desejado.
 ```
 double resultado = Math.Pow(3, 5);

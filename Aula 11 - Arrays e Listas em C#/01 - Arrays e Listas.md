@@ -4,7 +4,7 @@ Arrays e listas são maneiras de manipular uma coleção de elementos do mesmo t
 
 O Array, também conhecido como vetor (unidimensional) ou matriz (bidimensional) é uma estrutura de dados que armazena valores do mesmo tipo, com um tamanho fixo. Ele é uma única variável declarada que contém diversos valores armazenados.  
 O array deve ter o seu tamanho (quantidade de posições) definido ao ser inicializado, e não há como alterar esse tamanho depois de definido. O tamanho pode ser definido explicitamente, ou através de atribuição de valores ao inicializar.  
-Os arrays são identificados por colchetes [] na frente do nome do tipo da variável. Ao definir o tamanho, ele deve ser passado dentro dos colchetes. Os arrays podem ser atribuídos uma coleção de valores, definida por uma lista de valores entre chaves {}, separados por vírgula.  
+Os arrays são identificados por colchetes `[]` na frente do nome do tipo da variável. Ao definir o tamanho, ele deve ser passado dentro dos colchetes. Os arrays podem ser atribuídos uma coleção de valores, definida por uma lista de valores entre chaves `{ }`, separados por vírgula.  
 ```
 int[] arrayDeTamanhoPredefinido = new int[4];  
 int[] arrayDefinidoPorAtribuicao = new int[] {10, 20, 30, 40, 50, 60}  
@@ -25,7 +25,7 @@ Se o índice passado ao array for um índice que não existe, o programa encerra
 Os arrays são estruturas de tamanho fixo. A partir do momento que o tamanho do array é definido, ele não pode ser alterado, o mesmo array trabalhará sempre com o mesmo tamanho.
 
 Porém, existe um método dentro da classe Array chamado Resize. Com esse método, é possível "redimensionar" um array durante a execução do código.  
-Para utilizar o método Resize, é preciso passar a referência de memória do array, utilizando a palavra "ref", e o novo tamanho desejado.
+Para utilizar o método Resize, é preciso passar a referência de memória do array, utilizando a palavra `ref`, e o novo tamanho desejado.
 ```
 int[] arrayNumeros = int[4];  
 Array.Resize(ref arrayNumeros, 8);

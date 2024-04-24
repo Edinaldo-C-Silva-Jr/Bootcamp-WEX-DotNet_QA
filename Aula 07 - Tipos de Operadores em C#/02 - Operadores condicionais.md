@@ -52,7 +52,7 @@ Os operadores de comparação são:
 ### Switch - Case
 
 O **switch - case** é uma estrutura condicional que avalia vários caminhos possíveis de uma vez, baseado em uma comparação de uma variável com vários valores possíveis.  
-A estrutura Switch avalia apenas uma comparação de igualdade. A variável que será avaliada é passada ao bloco no comando *switch*, e as comparações são executadas nos blocos *case*, onde cada bloco lida com um caso possível para o valor da variável.
+A estrutura Switch avalia apenas uma comparação de igualdade. A variável que será avaliada é passada ao bloco no comando `switch`, e as comparações são executadas nos blocos `case`, onde cada bloco lida com um caso possível para o valor da variável.
 ```
 switch (letra)
 { 
@@ -68,7 +68,7 @@ default:
 	break;
 }
 ```
-Os blocos 'a', 'e', 'i', 'o' e 'u' são os diferentes casos possíveis para a variável letra, enquanto o bloco "default" é o bloco a ser executado caso nenhum deles seja verdadeiro.  
+Os blocos `a', 'e', 'i', 'o' e 'u' são os diferentes casos possíveis para a variável letra, enquanto o bloco "default" é o bloco a ser executado caso nenhum deles seja verdadeiro.  
 A instrução "break" é necessária para sair da condição switch após a execução do código desejado. Caso não haja um break, a estrutura passaria de um bloco para o seguinte.
 
 # Operadores Lógicos

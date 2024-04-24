@@ -4,11 +4,11 @@ Para salvar o versionamento de um repositório local do Git para um repositório
 Note que, para que os repositórios sejam conectados, ambos já devem existir: o repositório local no computador, e o repositório remoto no Github.
 ```
 git remote add origin [URL]  
-git remote -v - 
+git remote -v
 ```
 
 O primeiro comando é o responsável por conectar os repositórios. Ele conecta o repositório local atual ao repositório remoto que se encontra em [URL].  
-A URL do repositório remoto pode ser encontrada ao acessar a página do repositório no Github, depois em **[ <> Code ]**, então a URL ficará visível em uma caixa abaixo da aba HTTPS.  
+A URL do repositório remoto pode ser encontrada ao acessar a página do repositório no Github, depois em `[ <> Code ]`, então a URL ficará visível em uma caixa abaixo da aba HTTPS.  
 Nota: "Origin" é o nome dado ao repositório remoto, para que seja referenciado dentro do Git. Este nome pode ser qualquer valor, mas por padrão é usado "origin".
 
 O segundo comando mostra a URL do repositório remoto conectado ao repositório atual.
@@ -41,7 +41,7 @@ git commit -m "[mensagem]"
 ```
 
 Rastreia os arquivos que se encontram atualmente na Staging Area, incluindo-os no repositório local como parte de uma nova versão.  
-O modificador "-m" permite adicionar uma mensagem de descrição do commit, que é inserida em [mensagem] (entre aspas). Esta mensagem é exibida na página do Github ao acessar o commit, e também no próprio Git.
+O modificador `-m` permite adicionar uma mensagem de descrição do commit, que é inserida em [mensagem] (entre aspas). Esta mensagem é exibida na página do Github ao acessar o commit, e também no próprio Git.
 
 #### Casos especiais do rastreamento de alterações
 
@@ -64,8 +64,8 @@ git push origin master
 Envia todas as alterações salvas em commits do repositório local para o repositório remoto definido como origem.  
 Como dito anteriormente, ao conectar os repositórios, "origin" é o nome dado ao repositório remoto para ser referenciado dentro do git. Este nome pode ser definido como qualquer valor, mas por padrão se utiliza "origin".
 Por sua vez, "master" é o nome da branch principal no repositório local. Este também pode ser qualquer valor, mas o Git utiliza "master" como padrão.  
-O modificador -u indica ao Git para adicionar uma upstream, o que basicamente significa que a branch atual (neste caso, master) vai começar a rastrear a branch remota para que o Git saiba em qual branch deve fazer o push e o pull.  
-O modificador -u só precisa ser utilizado ao realizar o primeiro push. A partir daí, a upstream está configurada, então é possível usar o segundo comando para realizar pushes subsequentes.
+O modificador `-u` indica ao Git para adicionar uma upstream, o que basicamente significa que a branch atual (neste caso, master) vai começar a rastrear a branch remota para que o Git saiba em qual branch deve fazer o push e o pull.  
+O modificador `-u` só precisa ser utilizado ao realizar o primeiro push. A partir daí, a upstream está configurada, então é possível usar o segundo comando para realizar pushes subsequentes.
 
 #### Baixando alterações
 ```

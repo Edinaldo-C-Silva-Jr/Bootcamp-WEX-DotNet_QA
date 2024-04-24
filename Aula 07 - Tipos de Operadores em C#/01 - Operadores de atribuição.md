@@ -63,7 +63,7 @@ O contrário, porém, não é válido, pois um long pode ter valores que estão 
 
 Os métodos Convert e Parse sempre esperam que o valor passado para conversão seja um valor válido, e caso o valor seja inválido, eles resultam em uma exceção.  
 Para converter valores de forma segura contra erros, existe o método TryParse. Este método trabalha com a possibilidade de o valor passado ser inválido, portanto ele tenta fazer a conversão, e se não der certo ele atribui o valor 0 para a variável.  
-O método TryParse retorna um valor booleano, informando se a conversão teve sucesso ou não. O valor numérico é retornado em uma variável passada como parâmetro utilizando a palavra "out"
+O método TryParse retorna um valor booleano, informando se a conversão teve sucesso ou não. O valor numérico é retornado em uma variável passada como parâmetro utilizando a palavra `out`
 ```
 string a = "5";
 int.TryParse(a, out int b);

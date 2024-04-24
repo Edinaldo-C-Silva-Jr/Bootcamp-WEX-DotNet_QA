@@ -29,7 +29,7 @@ git branch -v
 ```
 
 O primeiro comando lista todas as branches existentes no repositório atual.  
-O segundo comando, com o modificador -v, também lista todas as branches do repositório, mas também exibe qual foi o último commit realizado em cada uma delas, mostrando o hash curto e a mensagem do commit.
+O segundo comando, com o modificador `-v`, também lista todas as branches do repositório, mas também exibe qual foi o último commit realizado em cada uma delas, mostrando o hash curto e a mensagem do commit.
 
 #### Mesclar Duas Branches
 ```
